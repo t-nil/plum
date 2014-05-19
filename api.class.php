@@ -70,7 +70,7 @@ class API {
 			return self::printOutput('malformed_input', '');
 		}
 		
-		$users = self::$db->safeQuery("SELECT COUNT() AS count FROM users
+		$users = self::$db->safeQuery("SELECT COUNT(*) AS count FROM users
 		                        WHERE name = ? OR email = ?",
 		                        $name, $email)->fetch();
 		
@@ -81,15 +81,15 @@ class API {
 		$pw_hashed = self::_hashPw($pw);
 		
 		self::$db->safeQuery("INSERT INTO users
-			        SET name = ?, email = ?, pw = ?", 
+			        SET name = ?, email = ?, pw = ?, is_active = 1", 
 			       $name, $email, $pw_hashed);
 				   
-		mail($email, "Registration on plum.faui2k13.de",
+		/*mail($email, "Registration on plum.faui2k13.de",
 			     "Thank you for registering your account. Click
 				  <a href='http://plum.faui2k13.de/confirm_register.php?name="
-				 .urlencode($_POST["name"])."&key=".$pw_hashed."'>here</a>
+				 .$name."&key=".$pw_hashed."'>here</a>
 				 to activate your account.",
-				 "From: faui2k13-Team <noreply@faui2k13.de>\nContent-Type:text/html");
+				 "From: faui2k13-Team <noreply@faui2k13.de>\nContent-Type:text/html");*/
 		
 		return self::printOutput('', '');
 	}
