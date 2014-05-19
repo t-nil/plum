@@ -219,6 +219,7 @@ class API {
 	public function updateStatus($new_status) {
 		self::$db->safeQuery("UPDATE users SET status = ? WHERE id = ?",
                              $new_status, $this->user['id']);
+		return self::printOutput('', '');
 	}
 	
     /**

@@ -229,7 +229,7 @@ function api_logout() {
 }*/
 
 function display() {
-	if (rendering) return;
+	if (rendering || State.typing) return;
 	rendering = true;
 	
 	State.user = api_me().result;
@@ -297,7 +297,7 @@ function display() {
 			.attr("id", "status")
 			.append( $( document.createElement("table") )
 				.html("<tr><td>current status:</td><td>" + escape(State.user.status) + "</td></tr>"
-					+ "<tr><td>new status:</td><td><input name='newStatus' type='text' /><a href='' onClick='updateStatus(); return false'>update</a></td></tr>")
+					+ "<tr><td>new status:</td><td><input name='newStatus' type='text' onfocus='State.typing = true' onblur='State.typing = false' /><a href='' onClick='updateStatus(); return false'>update</a></td></tr>")
 			)
 			.appendTo( contentDiv );
 	}

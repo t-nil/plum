@@ -52,8 +52,8 @@ and open the template in the editor.
 				</form>
 			</tr>
 			<tr>
-				<form action="api.php?/setstatus/Just%20chillin%27%20my%20ass" method="post">
-					<td>/setstatus/&lt;status(Just chillin&#39; my ass)&gt; <input type="text" name="sid" value="sid" /></td>
+				<form action="api.php?/set/status" method="post">
+					<td>/set/status<input type="text" name="sid" value="sid" /><input type="hidden" name="status" value="testestest" /></td>
                     <td><input type="submit" />
 				</form>
 			</tr>
