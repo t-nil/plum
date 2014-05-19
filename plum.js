@@ -277,7 +277,9 @@ function display() {
 			tableContent += "<tr><th colspan=3>" + loc.name + "</th><th>" + loc.usercount + "</th></tr>";
 			
 			users.forEach( function ( user ) {
-				tableContent += "<tr><td>" + user.name + "</td><td>" + user.checked_in_at_time + "</td><td class='status'>"
+				var date = new Date( user.checked_in_at_time * 1000 );
+				date = date.getFullYear() + "/" + (leading0(date.getMonth()+1)) + "/" + leading0(date.getDate()) + " " + leading0(date.getHours()) + ":" + leading0(date.getMinutes()) + ":" + leading0(date.getSeconds());
+				tableContent += "<tr><td>" + user.name + "</td><td>" + date + "</td><td class='status'>"
 					+ escape(user.status) + "</td></tr>";
 			});
 			
@@ -350,6 +352,10 @@ function logout() {
 
 function escape(str) {
 	return  $( document.createElement("td") ).text( str ).html();
+}
+
+function leading0(time) {
+	return ( time < 10 ? "0" : "" ) + time;
 }
 
 function displayError(errorMsg) {
