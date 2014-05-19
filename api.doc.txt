@@ -1,0 +1,17 @@
+RESULTS: json_encode(array('error' => <error>, 'result' => <result>)) // error empty on success
+
+!!! All commands except register and login need a valid sid submitted per POST
+
+/register (name, email, pw) => ()
+/login (name, pw) => array(uid, sid)
+/get/locations => array(array(id, name, map, type_id, usercount))
+/get/locations (type_id) => array(array(id, name, map, type_id, usercount))
+/get/location (id) => array(id, name, map, type_id, usercount)
+/get/location_types => array(array(id, name, usercount))
+/get/users (location_id) => array(id, name, last_access, checked_in_at_time, pos_x, pos_y, status)
+/get/user (id) => array(name, last_access, checked_in_at, checked_in_at_time, pos_x, pos_y, status)
+/get/me => array(name, email, checked_in_at, checked_in_at_time, pos_x, pos_y, status)
+/set/status (status) => ()
+/checkin (location_id, posx, posy) => ()
+/checkout => ()
+/halt => ()

@@ -1,0 +1,142 @@
+<!-- plum style -->
+
+@font-face{
+	font-family: Square2; src:local(SF Square Head), url(../media/square2.ttf) format(TrueType);
+	src: url("../media/square2.ttf");
+	font-weight:normal;
+    	font-style:normal;
+     	font-variant:normal;
+}
+	
+@font-face {
+	font-family: Square; src:local(Square721 BT), url(../media/square.ttf) format(TrueType); 
+	src: url("../media/square.ttf");
+	font-weight: normal;
+ 	font-style: normal;
+	font-variant: normal;
+}
+
+div#logo{
+	position:absolute;
+   top:2px;
+  	left:4px;
+}
+
+
+div#content{
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	position:relative;
+   top:50px;
+	size:100%;
+	
+}
+
+div#welcome{
+	font-family: Square;
+	position:absolute;
+	
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	 text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	 
+   top:44px;
+  	left:15px;
+}
+
+div#loc{
+	position:absolute;
+	right:10px;
+	top:55px;
+	border-width:1px;
+	border-style:solid;
+ 	border-color:grey;
+
+}
+
+div#loc td{
+	border-left: 1px solid #000;
+	padding:5px;
+}
+
+
+div#loc td:first-child {
+	border-left: none;
+}
+
+
+div#logout{
+	font-family: Square;
+	position:absolute;
+   top:5px;
+  	right:5px;
+}
+
+<!-- checkin to stay blue -->
+
+a, {
+	color: blue;
+}
+
+a:visited{
+	color: blue;
+}
+
+<!-- location-names to stay black -->
+
+td + td  a{ 
+	color: black;
+}
+
+td + td  a:visited{
+	color: black;
+}
+	
+table{
+	font-family: Square;
+	font-size: 1.2em;
+	border-collapse:collapse; 
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-shadow: rgba(0,0,0,.2) 0 0 2px;
+	 text-shadow: rgba(0,0,0,.2) 0 0 2px;
+}
+	
+tr.locType{
+	font-weight: bold;
+	
+}
+
+tr.locType td, div#status tr:first-child{
+	border-top: inset 15px transparent;
+}
+
+tr.emptyRow{
+	height: 10px !important; /* Overwrite any previous rules */
+    background-color: #FFFFFF;
+}
+
+tr.total td{
+	border-top: 2px solid black;
+}
+
+div#locs td{
+	padding-left:20px;
+}
+
+div#status td{
+	padding-left:20px;
+}
+
+
+.userDiv, .passDiv, .loginDiv{
+	text-align:right;
+}
+
+.registerDiv{
+	text-align:left;
+}
+
+
