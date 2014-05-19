@@ -1,6 +1,6 @@
 var API_PATH = "api.php";
 var API_ASYNC = false;
-var RELOAD_INTERVAL = 5000000;
+var RELOAD_INTERVAL = 5000;
 
 State = {
 	overview : 1,
