@@ -36,7 +36,9 @@
 
 	</head>
 	<body>
-		<img src="/media/plumanimated2.gif" />
+		<div id="logo">
+			<img src="/media/plumanimated2.gif" />
+		</div>
 		<?php if ($error) { ?>
 		<p>
 			Error while logging in! Please try again.
