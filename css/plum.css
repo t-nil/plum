@@ -22,6 +22,10 @@ div#logo{
   	left:4px;
 }
 
+div#login{
+	position:absolute;
+	top:54px;
+}
 
 div#content{
 	-moz-user-select: -moz-none;
