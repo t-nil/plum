@@ -43,11 +43,7 @@
 		<div id="logo">
 			<img src="media/plumanimated2.gif" />
 		</div>
-		<?php if ($error) { ?>
-		<p>
-			Error while logging in! Please try again.
-		</p>
-		<?php } ?>
+		
 		<div id="login">
 			<form id="loginForm" method="POST" action="login.php">
 				<table>
@@ -85,6 +81,11 @@
 					</tr>
 				</table>
 			</form>
+			<?php if ($error) { ?>
+		<p>
+			Error while logging in! Please try again.
+		</p>
+		<?php } ?>
 		</div>
 		<div class="info_box">
 	        	<ul class="tabs">
