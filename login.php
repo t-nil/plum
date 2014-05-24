@@ -18,8 +18,7 @@
 		<link rel="shortcut icon" href="/media/plum32x32v2.ico">
 		<link href="css/plum.css" type="text/css" rel="stylesheet" media="all">
 		<link href="css/buttons.css" type="text/css" rel="stylesheet" media="all">
-		<link href="css/animate.min.css" type="text/css" rel="stylesheet" media="all">
-		<link href="css/info_add.css" type="text/css" rel="stylesheet" media="all">
+		<link href="css/info_box.css" type="text/css" rel="stylesheet" media="all">
 		
 		
 		<!-- Piwik -->
@@ -82,7 +81,7 @@
 				</table>
 			</form>
 			<?php if ($error) { ?>
-		<p>
+		<p class="fontapply">
 			Error while logging in! Please try again.
 		</p>
 		<?php } ?>
