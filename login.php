@@ -54,7 +54,7 @@
 						</div>
 					</td>
 					<td>
-						<input name="name" type="text" /></td>
+						<input name="name" type="text" style="width:150px;" /></td>
 					</td>
 					</tr>
 					<tr class="passRow">
@@ -64,7 +64,7 @@
 						</div>
 					</td>
 					<td>
-						<input name="pw" type="password" />
+						<input name="pw" type="password" style="width:150px;" />
 					</td>
 					</tr>
 					<tr>
