@@ -14,6 +14,7 @@
 ?>
 <html>
 	<head>
+		<meta charset="utf-8">
 		<title>plum_</title>
 		<link rel="shortcut icon" href="/media/plum32x32v2.ico">
 		<link href="css/plum.css" type="text/css" rel="stylesheet" media="all">
@@ -93,8 +94,8 @@
 			          <label for="tab1">changelog</label>
 			          <div id="tab-content1" class="tab-content">
 			            <div class="animated  fadeInRight">
-							  23.05.14: added info-box to login-page<br>
-			              19.05.14: plum went online!
+							  23.05.14: 'changelog'- and 'about'-tab added<br>
+			              19.05.14: plum went online
 			            </div>
 			          </div>
 			        </li>
@@ -103,7 +104,7 @@
 			          <label for="tab2">about</label>
 			          <div id="tab-content2" class="tab-content" >
 			            <div class="animated  fadeInRight">
-			              plum is a free and open coding-project by ra1n and nakami.<br>with plum stundents of technische fakultät can shout-out their location and what they're doing.<br><br>visit our github-entry for upcoming features: <a href="https://github.com/floMeise/plum/issues">https://github.com/floMeise/plum/issues</a>
+			              plum is a free and opensource project by ra1n and nakami.<br>with plum students of the Faculty of Engineering FAU Erlangen-Nuremberg can shout-out their current position and what they're doing.<br><br>visit our github-entry for upcoming features: <a href="https://github.com/floMeise/plum/issues">https://github.com/floMeise/plum/issues</a>
 							<div id="plum_clouds">
 							<section id="clouds_apply" >
 								<div id="logo_transparent"></div>
