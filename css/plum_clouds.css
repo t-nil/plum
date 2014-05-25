@@ -1,0 +1,47 @@
+#plum_clouds {
+    margin-left:50%;
+}
+
+#clouds_apply {
+   background-position: calc(0% + -2151.781982421875px) 0%;
+   height: 138px;
+	width: 111px;
+   position: relative;
+   z-index: 0;
+   background: rgba(0, 0, 0, 0) url(../media/plum_banner.jpg) repeat scroll calc(0% + -2151.781982421875px) 0% / auto padding-box border-box;
+   margin: 0px 0px 0px -30px;
+	background-image: url(../media/plum_banner.jpg);
+	display:block;
+	-moz-animation-name: cloudsmove;
+	-moz-animation-duration: 60s;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-timing-function: linear;
+	-webkit-animation-name: cloudsmove;
+	-webkit-animation-duration: 60s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+		}
+@-moz-keyframes cloudsmove {
+	0% {
+		background-position:0% 0%;
+	}
+	100% {
+		background-position:-1000px 0;
+	}
+}
+@-webkit-keyframes cloudsmove {
+	0% {
+		background-position:0% 0%;
+	}
+	100% {
+		background-position:-1000px 0;
+	}
+}/*#clouds_apply*/
+
+#logo_transparent {
+    background-position: 50% 50%;
+    height: 138px;
+    position: relative;
+    width: 111px;
+    background: rgba(0, 0, 0, 0) url(../media/plumlogo_small.png) no-repeat scroll 50% 50% / auto padding-box border-box;
+}/*#logo_transparent*/

@@ -19,7 +19,7 @@
 		<link href="css/plum.css" type="text/css" rel="stylesheet" media="all">
 		<link href="css/buttons.css" type="text/css" rel="stylesheet" media="all">
 		<link href="css/info_box.css" type="text/css" rel="stylesheet" media="all">
-		
+		<link href="css/plum_clouds.css" type="text/css" rel="stylesheet" media="all">
 		
 		<!-- Piwik -->
 		<script type="text/javascript">
@@ -101,11 +101,19 @@
 			        <li class="tab">
 			          <input type="radio" name="tabs" id="tab2">
 			          <label for="tab2">about</label>
-			          <div id="tab-content2" class="tab-content">
+			          <div id="tab-content2" class="tab-content" >
 			            <div class="animated  fadeInRight">
 			              plum is a free and open coding-project by ra1n and nakami.<br>with plum stundents of technische fakultät can shout-out their location and what they're doing.<br><br>visit our github-entry for upcoming features: <a href="https://github.com/floMeise/plum/issues">https://github.com/floMeise/plum/issues</a>
-			            </div>
+							<div id="plum_clouds">
+							<section id="clouds_apply" >
+								<div id="logo_transparent"></div>
+							</section>
+						</div>			           
+
+					   </div>
+							
 			          </div>
+						
 			        </li>
 					<!-- license
 			         <li class="tab">
