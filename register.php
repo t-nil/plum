@@ -19,7 +19,9 @@ $error = -1;
 		<link href="css/buttons.css" type="text/css" rel="stylesheet" media="all">
 </head>
 <body>
-<img src="/media/plumanimated2.gif"><br />
+	<div id="logo">
+		<span class="logo">plum<span class="underscore">_</span></span>
+	</div><br><br>
 <?php if ($error == 0) { ?>
 Thank you for your registration!
 <?php } else if ($error == 1) { ?>

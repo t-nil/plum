@@ -303,7 +303,7 @@ function display() {
 	}
 	
 	body.html( "" )
-		.append( "<div id='logo'><img src='/media/plumanimated2.gif' /></div>" )
+		.append( "<div id='logo'>	<span class='logo'>plum<span class='underscore'>_</span></span></div>" )
 		.append( "<div id='welcome'>welcome, " + State.user.name + "</div>" )
 		.append( contentDiv )
 		.append( "<div id='logout'><a href='' onClick='logout(); return false'>logout</a></div>" );

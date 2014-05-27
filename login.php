@@ -63,7 +63,7 @@
 	</head>
 	<body>
 		<div id="logo">
-			<img src="media/plumanimated2.gif" />
+				<span class="logo">plum<span class="underscore">_</span></span>
 		</div>
 		
 		<div id="login">
@@ -105,7 +105,7 @@
 			</form>
 			<?php if ($error) { ?>
 		<p class="fontapply">
-			Error while logging in! Please try again.
+			Error logging in! Try again.
 		</p>
 		<?php } ?>
 		</div>

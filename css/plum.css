@@ -23,13 +23,53 @@ body{
 	user-select: none;
 }
 
+/* LOGO */
 div#logo{
 	position:absolute;
    top:2px;
   	left:4px;
 }
 
-div#login{
+div#logo span.logo{
+	font-family:Square2;
+	font-size:3.75em;
+}
+
+@keyframes underscoreFadeInOut {
+	  0% {
+			opacity:1;
+		}
+
+		100% {
+			opacity:0;
+		}
+}
+
+@-webkit-keyframes underscoreFadeInOut {
+	  0% {
+			-webkit-opacity:1;
+		}
+
+		100% {
+			-webkit-opacity:0;
+		}
+}
+div#logo .underscore {
+	animation-name: underscoreFadeInOut;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 1.5s;
+	animation-direction: alternate;
+
+	-webkit-animation-name: underscoreFadeInOut;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-duration: 1.5s;
+	-webkit-animation-direction: alternate;
+} /* END LOGO */
+
+
+div#login, div#register{
 	position:absolute;
 	top:54px;
 }
