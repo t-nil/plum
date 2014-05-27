@@ -26,7 +26,7 @@
 
 		<!-- for Facebook -->          
 		<meta property="og:title" content="plum_" />
-		<meta property="og:type" content="webapplication" />
+		<meta property="og:type" content="website" />
 		<meta property="og:image" content="http://www.faui2k13.de/media/plumNONanimated.gif" />
 		<meta property="og:url" content="http://plum.faui2k13.de/login.php" />
 		<meta property="og:description" content="with plum students of the Faculty of Engineering FAU Erlangen-Nuremberg can shout-out their current position and what they're doing." />
