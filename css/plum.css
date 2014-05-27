@@ -26,8 +26,8 @@ body{
 /* LOGO */
 div#logo{
 	position:absolute;
-   top:2px;
-  	left:4px;
+	top:-7px;
+  	left:2px;
 }
 
 div#logo span.logo{
@@ -71,7 +71,7 @@ div#logo .underscore {
 
 div#login, div#register{
 	position:absolute;
-	top:54px;
+	top:50px;
 }
 
 div#content{
