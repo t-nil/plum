@@ -27,7 +27,7 @@
 		<!-- for Facebook -->          
 		<meta property="og:title" content="plum_" />
 		<meta property="og:type" content="website" />
-		<meta property="og:image" content="http://www.faui2k13.de/media/plumNONanimated.gif" />
+		<meta property="og:image" content="http://plum.faui2k13.de/media/plum_200x200.png" />
 		<meta property="og:url" content="http://plum.faui2k13.de/login.php" />
 		<meta property="og:description" content="with plum students of the Faculty of Engineering FAU Erlangen-Nuremberg can shout-out their current position and what they're doing." />
 
@@ -35,7 +35,7 @@
 		<meta name="twitter:card" content="summary" />
 		<meta name="twitter:title" content="plum_" />
 		<meta name="twitter:description" content="with plum students of the Faculty of Engineering FAU Erlangen-Nuremberg can shout-out their current position and what they're doing." />
-		<meta name="twitter:image" content="http://www.faui2k13.de/media/plumNONanimated.gif" />
+		<meta name="twitter:image" content="http://plum.faui2k13.de/media/plum_200x200.png" />
 		
 		<title>plum_</title>
 		<link rel="shortcut icon" href="/media/plum32x32v2.ico">
