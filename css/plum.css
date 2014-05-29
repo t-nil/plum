@@ -157,6 +157,10 @@ table{
 	-webkit-text-shadow: rgba(0,0,0,.2) 0 0 2px;
 	 text-shadow: rgba(0,0,0,.2) 0 0 2px;
 }
+
+div#locs td, div#status td{
+	height: 25px;
+}
 	
 tr.locType{
 	font-weight: bold;
