@@ -89,13 +89,12 @@ div#content{
 div#welcome{
 	font-family: Square;
 	position:absolute;
+	top:32px;
+  	left:12px;
 	
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
 	 text-shadow: rgba(0,0,0,.01) 0 0 1px;
-	 
-   top:44px;
-  	left:15px;
 }
 
 div#loc{
