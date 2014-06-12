@@ -126,7 +126,15 @@
 			          <label for="tab2">about</label>
 			          <div id="tab-content2" class="tab-content" >
 			            <div class="animated  fadeInRight">
-			              plum is a free and opensource project by ra1n and nakami.<br>with plum students of the Faculty of Engineering FAU Erlangen-Nuremberg can shout-out their current position and what they're doing.<br><br>visit our github-entry for upcoming features: <a href="https://github.com/floMeise/plum/issues">https://github.com/floMeise/plum/issues</a>
+			              plum is a free and opensource project by ra1n and nakami.<br>
+			              with plum students of the Faculty of Engineering FAU Erlangen-Nuremberg can shout-out their current position and what they're doing.<br>
+			              <br>
+			              feel free to join our IRC-channel:<br>
+			              server: irc.fau.de<br>
+			              channel: #plum<br>
+			              <br>
+			              visit our github-entry for upcoming features:<br>
+			              <a href="https://github.com/floMeise/plum/issues">https://github.com/floMeise/plum/issues</a>
 							<div id="plum_clouds">
 							<section id="clouds_apply" >
 								<div id="logo_transparent"></div>
