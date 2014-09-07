@@ -81,7 +81,7 @@ div#content{
 	-o-user-select: none;
 	user-select: none;
 	position:relative;
-   top:50px;
+   	top:50px;
 	size:100%;
 	
 }
@@ -89,8 +89,8 @@ div#content{
 div#welcome{
 	font-family: Square;
 	position:absolute;
-	top:32px;
-  	left:12px;
+   	top:40px;
+  	left:10px;
   	text-shadow: rgba(0,0,0,.01) 0 0 1px;
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
@@ -193,4 +193,9 @@ div#status td{
 
 .registerDiv{
 	text-align:left;
+}
+
+input[type="text"],input[type="password"]{
+   font-family: Square;
+	font-size: 0.8em;
 }
