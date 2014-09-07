@@ -1,0 +1,51 @@
+/* login */
+div.animated{
+	color:white !important;
+}
+
+.tab div{
+	color:white !important;
+}
+
+#logo_transparent {
+  background: rgba(0, 0, 0, 0) url(../media/plumlogo_small_night.png) no-repeat scroll 50% 50% / auto padding-box border-box;
+}
+/* end login */
+
+td,  th{
+	color: white !important;
+}
+
+span{
+	color: white !important;
+}
+
+div#welcome{
+	color: white !important;
+}
+
+body{
+	background-color: black !important;
+}
+
+/* location-names to stay white*/
+
+td + td  a{ 
+	color: white !important;
+}
+
+td + td  a:visited{
+	color: white !important;
+}
+
+div#loc td {
+border-left: 1px solid white !important;
+}
+
+div#loc td:first-child {
+	border-left: none !important;
+}
+
+tr.total td{
+	border-top: 2px solid white !important;
+}
