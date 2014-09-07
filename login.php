@@ -92,12 +92,12 @@
 					<tr>
 					<td>
 						<div class="loginDiv">
-							<input class="btnLogin" type="submit" value="Login" />
+							<input class="btnLogin" type="submit" value="login" />
 						</div>
 					</td>
 					<td>
 						<div class="registerDiv">
-							<input class="btnRegister" type="button" value="Register" onClick="window.location.href='register.php'"/>
+							<input class="btnRegister" type="button" value="register" onClick="window.location.href='register.php'"/>
 						</div>
 					</td>
 					</tr>
