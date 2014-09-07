@@ -86,6 +86,9 @@ Email or password already in use!
 					<td>
 							<input class="btnReg" type="submit" value="register" />
 					</td>
+					<td>
+							<input class="btnDef" type="button" onclick="window.location.href='index.php'" value="back" />
+					</td>
 					
 					</tr>
 				</table>
