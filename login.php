@@ -16,26 +16,26 @@
 	<head>
 		<meta charset="utf-8">
 		
+		<!-- social media meta-info -->
 		<!-- for Google -->
 		<meta name="description" content="with plum students of the Faculty of Engineering FAU Erlangen-Nuremberg can shout-out their current position and what they're doing." />
 		<meta name="keywords" content="plum, faui2k13, fau, computer science" />
-
 		<meta name="author" content="ra1n, nakami" />
 		<meta name="copyright" content="all rights reserved" />
 		<meta name="application-name" content="plum_" />
-
 		<!-- for Facebook -->          
 		<meta property="og:title" content="plum_" />
 		<meta property="og:type" content="website" />
 		<meta property="og:image" content="http://plum.faui2k13.de/media/plum_200x200.png" />
 		<meta property="og:url" content="http://plum.faui2k13.de/login.php" />
 		<meta property="og:description" content="with plum students of the Faculty of Engineering FAU Erlangen-Nuremberg can shout-out their current position and what they're doing." />
-
 		<!-- for Twitter -->          
 		<meta name="twitter:card" content="summary" />
 		<meta name="twitter:title" content="plum_" />
 		<meta name="twitter:description" content="with plum students of the Faculty of Engineering FAU Erlangen-Nuremberg can shout-out their current position and what they're doing." />
 		<meta name="twitter:image" content="http://plum.faui2k13.de/media/plum_200x200.png" />
+		<script src="jquery.js" type="text/javascript"></script>
+		<script src="jquery.cookie.js" type="text/javascript"></script>
 		
 		<title>plum_</title>
 		<link rel="shortcut icon" href="/media/plum32x32v2.ico">
@@ -43,29 +43,52 @@
 		<link href="css/buttons.css" type="text/css" rel="stylesheet" media="all">
 		<link href="css/info_box.css" type="text/css" rel="stylesheet" media="all">
 		<link href="css/plum_clouds.css" type="text/css" rel="stylesheet" media="all">
-		
-		<!-- Piwik -->
-		<script type="text/javascript">
-		  var _paq = _paq || [];
-		  _paq.push(['trackPageView']);
-		  _paq.push(['enableLinkTracking']);
-		  (function() {
-		    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://faui2k13.de/analytics/";
-		    _paq.push(['setTrackerUrl', u+'piwik.php']);
-		    _paq.push(['setSiteId', 4]);
-		    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
-		    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-		  })();
-		</script>
-		<noscript><p><img src="http://faui2k13.de/analytics/piwik.php?idsite=4" style="border:0;" alt="" /></p></noscript>
-		<!-- End Piwik Code -->
 
+		<!-- nightmode -->
+		<link href="css/css_toggle.css" type="text/css" rel="stylesheet" media="all">
+		<link id="nightmode" rel="stylesheet" type="text/css" href="">
+		<!-- toggle position difference -->
+		<style>
+			div#css_toggle {
+				right:5px !important;
+			}
+		</style>
+		<script type="text/javascript">
+			function updateStylesheet() {
+				if ($.cookie("switch-input") == "true")
+					document.getElementById('nightmode').setAttribute('href', 'css/plum_night.css');
+				else
+					document.getElementById('nightmode').setAttribute('href', '');
+			}
+			updateStylesheet();
+		</script>
+		<!-- /night mode -->
 	</head>
 	<body>
+		<!-- cookie night mode -->
+		<script>
+			$(function () {
+				$("input.switch-input").each(function() {
+					var mycookie = $.cookie($(this).attr('name'));
+					if (mycookie && mycookie == "true") {
+						$(this).prop('checked', mycookie);
+					}
+				});
+				
+				$("input.switch-input").change(function() {
+					$.cookie($(this).attr("name"), $(this).prop('checked'), {
+						path: '/',
+						expires: 365
+					});
+					
+					updateStylesheet();
+				});
+			});
+		</script>
+		<!-- /cookie night mode -->
 		<div id="logo">
 				<span class="logo">plum<span class="underscore">_</span></span>
 		</div>
-		
 		<div id="login">
 			<form id="loginForm" method="POST" action="login.php">
 				<table>
@@ -103,10 +126,10 @@
 					</tr>
 				</table>
 			</form>
-			<?php if ($error) { ?>
-		<p class="fontapply">
-			Error logging in! Try again.
-		</p>
+		<?php if ($error) { ?>
+			<p class="fontapply">
+				Error logging in! Try again.
+			</p>
 		<?php } ?>
 		</div>
 		<div class="info_box">
@@ -116,8 +139,10 @@
 			          <label for="tab1">changelog</label>
 			          <div id="tab-content1" class="tab-content">
 			            <div class="animated  fadeInRight">
-							  23.05.14: 'changelog'- and 'about'-tab added<br>
-			              19.05.14: plum went online
+							<p>18.09.14: added 'nightmode' <b>{new}</b></p>
+							<p>08.09.14: added experimental 'nightmode'</p>
+							<p>23.05.14: added 'changelog'- and 'about'-tab</p>
+			             <p>19.05.14: plum went online</p>
 			            </div>
 			          </div>
 			        </li>
@@ -126,15 +151,7 @@
 			          <label for="tab2">about</label>
 			          <div id="tab-content2" class="tab-content" >
 			            <div class="animated  fadeInRight">
-			              plum is a free and opensource project by ra1n and nakami.<br>
-			              with plum students of the Faculty of Engineering FAU Erlangen-Nuremberg can shout-out their current position and what they're doing.<br>
-			              <br>
-			              feel free to join our IRC-channel:<br>
-			              server: irc.fau.de<br>
-			              channel: #plum<br>
-			              <br>
-			              visit our github-entry for upcoming features:<br>
-			              <a href="https://github.com/floMeise/plum/issues">https://github.com/floMeise/plum/issues</a>
+			              plum is a free and open source project by ra1n and nakami.<br>with plum students of the Faculty of Engineering FAU Erlangen-Nuremberg can shout-out their current position and what they're doing.<br><br>visit our github-entry for upcoming features: <a href="https://github.com/floMeise/plum/issues">https://github.com/floMeise/plum/issues</a>
 							<div id="plum_clouds">
 							<section id="clouds_apply" >
 								<div id="logo_transparent"></div>
@@ -158,5 +175,12 @@
 			        </li> -->
 			    </ul>
 				</div>
+				<div id="css_toggle">
+			<label class="switch">
+				<input type="checkbox" class="switch-input" name="switch-input" id="switch-input" >
+					<span class="switch-label" data-on="on" data-off="off"></span><span class="switch-handle"></span>
+				</input>
+			</label>
+		</div> 
 	</body>
 </html>
