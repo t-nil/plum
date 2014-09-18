@@ -285,4 +285,6 @@ body {
 .tab p{
 	-webkit-margin-before: 0em;
 	-webkit-margin-after: 0em;
+	margin-top: 0em;
+	margin-bottom: 0em;
 }
