@@ -306,8 +306,8 @@ function display() {
 		.append( "<div id='logo'>	<span class='logo'>plum<span class='underscore'>_</span></span></div>" )
 		.append( "<div id='welcome'>welcome, " + State.user.name + "</div>" )
 		.append( contentDiv )
-		.append( "<div id='logout'><a href='' onClick='logout(); return false'>logout</a></div>" );
-		
+		.append( "<div id='logout'><a href='' onClick='logout(); return false'>logout</a></div>" )
+		.append( "<div id='css_toggle'><label class='switch'><input type='checkbox' class='switch-input' name='switch-input' id='switch-input' onclick='swapStyleSheet()'><span class='switch-label' data-on='on' data-off='off'></span><span class='switch-handle'></span></label></div>" ); 
 	rendering = false;
 }
 
