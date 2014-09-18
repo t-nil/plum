@@ -81,7 +81,7 @@ div#content{
 	-o-user-select: none;
 	user-select: none;
 	position:relative;
-   	top:50px;
+   top:50px;
 	size:100%;
 	
 }
@@ -89,11 +89,13 @@ div#content{
 div#welcome{
 	font-family: Square;
 	position:absolute;
-   	top:40px;
-  	left:10px;
-  	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	 text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	 
+   top:40px;
+  	left:10px;
 }
 
 div#loc{
@@ -127,6 +129,12 @@ div#logout{
   	right:5px;
 }
 
+div#css_toggle{
+	position:absolute;
+   top: 4px;
+  	right:60px;
+}
+
 /* checkin to stay blue */
 
 a, {
@@ -156,8 +164,9 @@ table{
 	 text-shadow: rgba(0,0,0,.2) 0 0 2px;
 }
 
-div#locs td, div#status td{
-	height: 25px;
+input[type="text"],input[type="password"]{
+   font-family: Square;
+	font-size: 0.8em;
 }
 	
 tr.locType{
@@ -193,9 +202,4 @@ div#status td{
 
 .registerDiv{
 	text-align:left;
-}
-
-input[type="text"],input[type="password"]{
-   font-family: Square;
-	font-size: 0.8em;
 }
