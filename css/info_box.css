@@ -64,7 +64,7 @@ div.info_box{
 	font-size: 1.25em;
 	line-height: 140%;
 	position: absolute;
-	top: 35px;
+	top: 30px;
 	left: 0;
 	box-sizing: border-box;
 }
@@ -280,4 +280,9 @@ body {
 
 .tab label{
 	padding:3px 3px !important;
+}
+
+.tab p{
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
 }
