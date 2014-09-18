@@ -8,7 +8,7 @@ div.animated{
 }
 
 #logo_transparent {
-  background: rgba(0, 0, 0, 0) url(../media/plumlogo_small_night.png) no-repeat scroll 50% 50% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) url(../media/plumlogo_small_night.png) no-repeat scroll 50% 50% / auto padding-box border-box;
 }
 /* end login */
 
@@ -48,4 +48,15 @@ div#loc td:first-child {
 
 tr.total td{
 	border-top: 2px solid white !important;
+}
+
+div.tab-content a{
+	color: grey !important;
+	text-shadow: none !important;
+	text-decoration: none !important;
+}
+
+div#locs a{
+	color: grey !important;
+	text-shadow: none !important;
 }
