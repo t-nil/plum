@@ -256,12 +256,7 @@ body {
 /*  BUTTON LAYOUT */
 .tab {
 	box-shadow:inset 0px 1px 0px 0px #54a3f7;
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #007dc1), color-stop(1, #0061a7));
-	background:-moz-linear-gradient(top, #007dc1 5%, #0061a7 100%);
-	background:-o-linear-gradient(top, #007dc1 5%, #0061a7 100%);
-	background:-ms-linear-gradient(top, #007dc1 5%, #0061a7 100%);
-	background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
-	background-color:#007dc1;
+	background-color:#0078e7;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
