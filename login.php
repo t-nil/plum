@@ -15,7 +15,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-
+		
 		<script src="jquery.js" type="text/javascript"></script>
 		<script src="jquery.cookie.js" type="text/javascript"></script>
 		
@@ -26,8 +26,6 @@
 		<link href="css/buttons.css" type="text/css" rel="stylesheet" media="all">
 		<link href="css/info_box.css" type="text/css" rel="stylesheet" media="all">
 		<link href="css/plum_clouds.css" type="text/css" rel="stylesheet" media="all">
-		
-		
 
 		<!-- nightmode -->
 		<link href="css/css_toggle.css" type="text/css" rel="stylesheet" media="all">
@@ -57,40 +55,17 @@
 				<span class="logo">plum<span class="underscore">_</span></span>
 		</div>
 		<div id="login">
-			<form id="loginForm" method="POST" action="login.php">
-				<table>
-					<tr class="userRow">
-					<td>
-						<div class="userDiv">
-							<label>user:</label>
-						</div>
-					</td>
-					<td>
-						<input name="name" type="text" style="width:150px;" /></td>
-					</td>
-					</tr>
-					<tr class="passRow">
-					<td>
-						<div class="passDiv">
-							<label>pass:</label>
-						</div>
-					</td>
-					<td>
-						<input name="pw" type="password" style="width:150px;" />
-					</td>
-					</tr>
-					<tr>
-					<td>
-							<button class="button-xsmall pure-button pure-button-primary btn" type="submit" value="login">login</button>
-					</td>
-					<td>
-							<a class="button-xsmall pure-button btn no_underline" onclick=" window.location = 'register.php'">register</a>
-					</td>
-					</tr>
-				</table>
+			<form  class="login pure-form" method="POST" action="login.php" autocomplete="off">					
+					 <fieldset class="pure-group">
+						<input type="text" class="pure-input-1-1" name="name" placeholder="user"/>
+						<input type="password" class="pure-input-1-1" name="pw" placeholder="pass"/>
+					</fieldset>
+					<button class="button-xsmall pure-button pure-button-primary btn" type="submit" value="login">login</button>
+					<a class="button-xsmall pure-button btn no_underline" onclick=" window.location = 'register.php'">register</a>
 			</form>
+		</div>
 		<?php if ($error) { ?>
-			<p class="fontapply">
+			<div class="errorMsg fontapply">
 				Error logging in! Try again.
 			</p>
 		<?php } ?>
