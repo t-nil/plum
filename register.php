@@ -13,25 +13,30 @@ $error = -1;
 ?>	
 <html>
 <head>
-		<title>register at plum_</title>
+		<meta charset="utf-8">
+		
+		<title>plum_</title>
 		<link rel="shortcut icon" href="/media/plum32x32v2.ico">
+		<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
 		<link href="css/plum.css" type="text/css" rel="stylesheet" media="all">
 		<link href="css/buttons.css" type="text/css" rel="stylesheet" media="all">
+		<link href="css/info_box.css" type="text/css" rel="stylesheet" media="all">
+		<link href="css/plum_clouds.css" type="text/css" rel="stylesheet" media="all">
 </head>
 <body>
 	<div id="logo">
 		<span class="logo">plum<span class="underscore">_</span></span>
 	</div><br><br>
 <?php if ($error == 0) { ?>
-Thank you for your registration!
+<div class="errorMsg fontapply">Thank you for your registration!</div>
 <?php } else if ($error == 1) { ?>
-Email or password do not match!
+<div class="errorMsg fontapply">Email or password do not match!</div>
 <?php } else if ($error == 2) { ?>
-Your input contains invalid letters!
+<div class="errorMsg fontapply">Your input contains invalid letters!</div>
 <?php } else if ($error == 3) { ?>
-Internal server error!
+<div class="errorMsg fontapply">Internal server error!</div>
 <?php } else if ($error == 4) { ?>
-Email or password already in use!
+<div class="errorMsg fontapply">Email or password already in use!</div>
 <?php } ?><br />
 <div id="register">
 			<form id="registerForm" method="POST" action="register.php?do">
@@ -83,13 +88,10 @@ Email or password already in use!
 					</td>
 					</tr>	
 					<tr>
-					<td>
-							<input class="btnReg" type="submit" value="register" />
+					<td rowspan="2">
+							<button class="button-xsmall pure-button pure-button-primary btn" type="submit" value="register">register</button>
+							<a class="button-xsmall pure-button btn no_underline"  href="login.php">back</a>
 					</td>
-					<td>
-							<input class="btnDef" type="button" onclick="window.location.href='index.php'" value="back" />
-					</td>
-					
 					</tr>
 				</table>
 			</form>
