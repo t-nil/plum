@@ -117,6 +117,10 @@ p.fontapply{
 	font-family:Square;
 }
 
+div.fontapply{
+	font-family:Square;
+}
+
 div#loc td:first-child {
 	border-left: none;
 }
@@ -125,14 +129,14 @@ div#loc td:first-child {
 div#logout{
 	font-family: Square;
 	position:absolute;
-   top:5px;
-  	right:5px;
+   top:2px;
+  	right:2px;
 }
 
 div#css_toggle{
 	position:absolute;
-   top: 4px;
-  	right:60px;
+   top: 3px;
+  	right:64px;
 }
 
 /* checkin to stay blue */
@@ -158,7 +162,7 @@ td + td  a:visited{
 table{
 	font-family: Square;
 	font-size: 1.2em;
-	border-collapse:collapse; 
+	border-collapse: collapse;
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-shadow: rgba(0,0,0,.2) 0 0 2px;
 	 text-shadow: rgba(0,0,0,.2) 0 0 2px;
@@ -184,11 +188,13 @@ tr.emptyRow{
 }
 
 tr.total td{
+	padding-top:2px;
 	border-top: 2px solid black;
 }
 
 div#locs td{
 	padding-left:20px;
+	padding-bottom:2px;
 }
 
 div#status td{
@@ -202,4 +208,9 @@ div#status td{
 
 .registerDiv{
 	text-align:left;
+}
+
+div.errorMsg{
+	margin-top:200px;
+	margin-left:5px;
 }
