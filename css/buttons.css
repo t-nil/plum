@@ -1,12 +1,12 @@
 /* main buttons in plum */
-.btnLogin, .btnRegister, .btnReg, .btnDef,div#status a, div#logout a{
+.btnRegister, .btnReg, .btnDef, div#logout a{
 	box-shadow:inset 0px 1px 0px 0px #54a3f7;
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #007dc1), color-stop(1, #0061a7));
 	background:-moz-linear-gradient(top, #007dc1 5%, #0061a7 100%);
 	background:-o-linear-gradient(top, #007dc1 5%, #0061a7 100%);
 	background:-ms-linear-gradient(top, #007dc1 5%, #0061a7 100%);
 	background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
-	background-color:#007dc1;
+	background-color:#0078e7;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
@@ -17,7 +17,7 @@
 	text-shadow:0px 1px 0px #154682;
 }
 
-.btnLogin:hover, .btnRegister:hover, .btnReg:hover,  .btnDef:hover, div#status a:hover, div#logout a:hover{
+.btnRegister:hover, .btnReg:hover,  .btnDef:hover,  div#logout a:hover{
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0061a7), color-stop(1, #007dc1));
 	background:-moz-linear-gradient(top, #0061a7 5%, #007dc1 100%);
 	background:-webkit-linear-gradient(top, #0061a7 5%, #007dc1 100%);
@@ -27,11 +27,21 @@
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0061a7', endColorstr='#007dc1',GradientType=0);
 	background-color:#0061a7;
 }
-.btnLogin:active, .btnRegister:active, div#status a:active .btnReg:active, .btnDef:active, div#logout a:active{
+.btnLogin:active, .btnRegister:active,  .btnReg:active, .btnDef:active, div#logout a:active{
 	position:relative;
 	top:1px;
 }
 
-.btnReg{
-	float:right;
+.btn{
+	font-family:proxima-nova, sans-serif;
+	font-size:12px;
+}
+
+.btn_checkin{
+	width:105px;
+}
+
+.no_underline:link, .no_underline:active, .no_underline:visited {
+	text-decoration: none;
+	color: black;
 }
