@@ -71,7 +71,8 @@ div#logo .underscore {
 
 div#login, div#register{
 	position:absolute;
-	top:50px;
+	top:40px;
+	left: 12px;
 }
 
 div#content{
@@ -163,14 +164,20 @@ table{
 	font-family: Square;
 	font-size: 1.2em;
 	border-collapse: collapse;
-	-webkit-font-smoothing: antialiased;
+	/**-webkit-font-smoothing: antialiased;
 	-webkit-text-shadow: rgba(0,0,0,.2) 0 0 2px;
 	 text-shadow: rgba(0,0,0,.2) 0 0 2px;
+	**/
 }
 
 input[type="text"],input[type="password"]{
    font-family: Square;
-	font-size: 0.8em;
+	font-size: 1.0em;
+}
+
+/*anti-autofill-in color */
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
 }
 	
 tr.locType{
@@ -201,16 +208,15 @@ div#status td{
 	padding-left:20px;
 }
 
-
-.userDiv, .passDiv, .loginDiv{
-	text-align:right;
-}
-
-.registerDiv{
-	text-align:left;
-}
-
 div.errorMsg{
-	margin-top:200px;
-	margin-left:5px;
+	margin-top:152px;
+	margin-left:140px;
+}
+
+form.login input, form.register input{
+	padding:3px !important;
+}
+
+fieldset.pure-group{
+	padding-bottom:1px;
 }
