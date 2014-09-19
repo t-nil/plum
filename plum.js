@@ -1,6 +1,6 @@
 var API_PATH = "api.php";
 var API_ASYNC = false;
-var RELOAD_INTERVAL = 5000;
+var RELOAD_INTERVAL = 5500;
 
 State = {
 	overview : 1,
@@ -253,7 +253,7 @@ function display() {
 						? "<a href='' onclick='checkout(); return false'>checkout</a>"
 						: "<a href='' onClick='checkin(" + loc.id + "); return false;'>checkin</a>";
 				var locNameWithLink = loc.usercount <= 0 ? loc.name : "<a href='' onClick='listUsers(" + loc.id + "); return false;'>" + loc.name + "</a>";
-				tableContent += "<tr class='loc'><td>" + checkinLink + "</td><td>" + locNameWithLink + "</td><td>" + loc.usercount + "</td></tr>";
+				tableContent += "<tr class='loc'><td class='btn_checkin'>" + checkinLink + "</td><td>" + locNameWithLink + "</td><td>" + loc.usercount + "</td></tr>";
 				totalUsers += parseInt(loc.usercount);
 			});
 		});
@@ -297,7 +297,7 @@ function display() {
 			.attr("id", "status")
 			.append( $( document.createElement("table") )
 				.html("<tr><td>current status:</td><td>" + escape(State.user.status) + "</td></tr>"
-					+ "<tr><td>new status:</td><td><input name='newStatus' type='text' onfocus='State.typing = true' onblur='State.typing = false' /><a href='' onClick='updateStatus(); return false'>update</a></td></tr>")
+					+ "<tr><td>new status:</td><td><input name='newStatus' type='text' onfocus='State.typing = true' onblur='State.typing = false' /></td><td><button onClick='updateStatus(); return false' class='button-xsmall pure-button pure-button-primary btn'>update</button></td></tr>")
 			)
 			.appendTo( contentDiv );
 	}
@@ -306,8 +306,8 @@ function display() {
 		.append( "<div id='logo'>	<span class='logo'>plum<span class='underscore'>_</span></span></div>" )
 		.append( "<div id='welcome'>welcome, " + State.user.name + "</div>" )
 		.append( contentDiv )
-		.append( "<div id='logout'><a href='' onClick='logout(); return false'>logout</a></div>" )
-		.append( "<div id='css_toggle'><label class='switch'><input type='checkbox' class='switch-input' name='switch-input' id='switch-input' onclick='swapStyleSheet()'><span class='switch-label' data-on='on' data-off='off'></span><span class='switch-handle'></span></label></div>" ); 
+		.append( "<div id='logout'><button class='button-xsmall pure-button pure-button-primary btn'  onClick='logout(); return false'>logout</button></div>" )
+		.append( "<div id='css_toggle'><label class='switch'><input type='checkbox' class='switch-input' name='switch-input' id='switch-input'"+($.cookie("switch-input") == "true" ? " checked='checked'":"")+"><span class='switch-label' data-on='on' data-off='off'></span><span class='switch-handle'></span></label></div>" );
 	rendering = false;
 }
 
