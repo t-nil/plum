@@ -46,8 +46,8 @@
 		  
 div.info_box{
 	position: absolute;
-	left: 230px;
-	top: 0px;
+	left: 215px;
+	top: -1px;
 }
 
 [id^=tab]:checked ~ [id^=tab-content], [id^=tab]:checked ~ [id^=tab-content] > div {
