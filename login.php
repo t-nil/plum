@@ -84,7 +84,7 @@
 							<button class="button-xsmall pure-button pure-button-primary btn" type="submit" value="login">login</button>
 					</td>
 					<td>
-							<a class="button-xsmall pure-button btn" onclick=" window.location = 'register.php'">register</a>
+							<a class="button-xsmall pure-button btn no_underline" onclick=" window.location = 'register.php'">register</a>
 					</td>
 					</tr>
 				</table>
