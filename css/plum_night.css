@@ -61,7 +61,7 @@ div#locs a{
 	text-shadow: none !important;
 }
 
-.no_underline:link, .no_underline:active, .no_underline:visited {
+.no_underline, .no_underline:link, .no_underline:active, .no_underline:visited {
 	text-decoration: none;
 	color: black !important;
 }
