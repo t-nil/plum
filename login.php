@@ -15,34 +15,19 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		
-		<!-- social media meta-info -->
-		<!-- for Google -->
-		<meta name="description" content="with plum students of the Faculty of Engineering FAU Erlangen-Nuremberg can shout-out their current position and what they're doing." />
-		<meta name="keywords" content="plum, faui2k13, fau, computer science" />
-		<meta name="author" content="ra1n, nakami" />
-		<meta name="copyright" content="all rights reserved" />
-		<meta name="application-name" content="plum_" />
-		<!-- for Facebook -->          
-		<meta property="og:title" content="plum_" />
-		<meta property="og:type" content="website" />
-		<meta property="og:image" content="http://plum.faui2k13.de/media/plum_200x200.png" />
-		<meta property="og:url" content="http://plum.faui2k13.de/login.php" />
-		<meta property="og:description" content="with plum students of the Faculty of Engineering FAU Erlangen-Nuremberg can shout-out their current position and what they're doing." />
-		<!-- for Twitter -->          
-		<meta name="twitter:card" content="summary" />
-		<meta name="twitter:title" content="plum_" />
-		<meta name="twitter:description" content="with plum students of the Faculty of Engineering FAU Erlangen-Nuremberg can shout-out their current position and what they're doing." />
-		<meta name="twitter:image" content="http://plum.faui2k13.de/media/plum_200x200.png" />
+
 		<script src="jquery.js" type="text/javascript"></script>
 		<script src="jquery.cookie.js" type="text/javascript"></script>
 		
 		<title>plum_</title>
 		<link rel="shortcut icon" href="/media/plum32x32v2.ico">
+		<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
 		<link href="css/plum.css" type="text/css" rel="stylesheet" media="all">
 		<link href="css/buttons.css" type="text/css" rel="stylesheet" media="all">
 		<link href="css/info_box.css" type="text/css" rel="stylesheet" media="all">
 		<link href="css/plum_clouds.css" type="text/css" rel="stylesheet" media="all">
+		
+		
 
 		<!-- nightmode -->
 		<link href="css/css_toggle.css" type="text/css" rel="stylesheet" media="all">
@@ -66,25 +51,7 @@
 	</head>
 	<body>
 		<!-- cookie night mode -->
-		<script>
-			$(function () {
-				$("input.switch-input").each(function() {
-					var mycookie = $.cookie($(this).attr('name'));
-					if (mycookie && mycookie == "true") {
-						$(this).prop('checked', mycookie);
-					}
-				});
-				
-				$("input.switch-input").change(function() {
-					$.cookie($(this).attr("name"), $(this).prop('checked'), {
-						path: '/',
-						expires: 365
-					});
-					
-					updateStylesheet();
-				});
-			});
-		</script>
+			<script src="nightmode_cookie.js" type="text/javascript"></script>
 		<!-- /cookie night mode -->
 		<div id="logo">
 				<span class="logo">plum<span class="underscore">_</span></span>
@@ -114,14 +81,10 @@
 					</tr>
 					<tr>
 					<td>
-						<div class="loginDiv">
-							<input class="btnLogin" type="submit" value="login" />
-						</div>
+							<button class="button-xsmall pure-button pure-button-primary btn" type="submit" value="login">login</button>
 					</td>
 					<td>
-						<div class="registerDiv">
-							<input class="btnRegister" type="button" value="register" onClick="window.location.href='register.php'"/>
-						</div>
+							<a class="button-xsmall pure-button btn" onclick=" window.location = 'register.php'">register</a>
 					</td>
 					</tr>
 				</table>
@@ -176,11 +139,11 @@
 			    </ul>
 				</div>
 				<div id="css_toggle">
-			<label class="switch">
-				<input type="checkbox" class="switch-input" name="switch-input" id="switch-input" >
-					<span class="switch-label" data-on="on" data-off="off"></span><span class="switch-handle"></span>
-				</input>
-			</label>
-		</div> 
+					<label class="switch">
+						<input type="checkbox" class="switch-input" name="switch-input" id="switch-input" >
+							<span class="switch-label" data-on="on" data-off="off"></span><span class="switch-handle"></span>
+						</input>
+					</label>
+				</div> 
 	</body>
 </html>
