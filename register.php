@@ -22,80 +22,35 @@ $error = -1;
 		<link href="css/buttons.css" type="text/css" rel="stylesheet" media="all">
 		<link href="css/info_box.css" type="text/css" rel="stylesheet" media="all">
 		<link href="css/plum_clouds.css" type="text/css" rel="stylesheet" media="all">
+		
 </head>
 <body>
 	<div id="logo">
 		<span class="logo">plum<span class="underscore">_</span></span>
 	</div><br><br>
 <?php if ($error == 0) { ?>
-<div class="errorMsg fontapply">Thank you for your registration!</div>
+<div class="errorMsg fontapply">all set!</div>
 <?php } else if ($error == 1) { ?>
-<div class="errorMsg fontapply">Email or password do not match!</div>
+<div class="errorMsg fontapply">email or pass does not match.</div>
 <?php } else if ($error == 2) { ?>
-<div class="errorMsg fontapply">Your input contains invalid letters!</div>
+<div class="errorMsg fontapply">input contains invalid characters.</div>
 <?php } else if ($error == 3) { ?>
-<div class="errorMsg fontapply">Internal server error!</div>
+<div class="errorMsg fontapply">something really bad happened, try again.</div>
 <?php } else if ($error == 4) { ?>
-<div class="errorMsg fontapply">Email or password already in use!</div>
+<div class="errorMsg fontapply">this user or email seems to be registered already.</div>
 <?php } ?><br />
 <div id="register">
-			<form id="registerForm" method="POST" action="register.php?do">
-				<table>
-					<tr class="usernameRow">
-					<td>
-						<label>username:</label>
-					</td>
-					<td>
-						<input name="user" type="text" /></td>
-					</td>
-					</tr>
-					<tr class="emptyRow"></tr>
-					<tr class="emailRow1">
-					<td>
-						<label>email:</label>
-					</td>
-					<td>
-						<input name="email" type="text" /></td>
-					</td>
-					</tr>
-					<tr class="emailRow2">
-					<td>
-						<label>repeat:</label>
-					</td>
-					<td>
-						<input name="email_confirm" type="text" /></td>
-					</td>
-					<tr class="emptyRow"></tr>
-					
-					<tr class="passRow1">
-					<td>
-						
-							<label>password:</label>
-						
-					</td>
-					<td>
-						<input name="pw" type="password" />
-					</td>
-					</tr>
-					<tr class="passRow2">
-					<td>
-						
-							<label>repeat:</label>
-						
-					</td>
-					<td>
-						<input name="pw_confirm" type="password" />
-					</td>
-					</tr>	
-					<tr>
-					<td rowspan="2">
-							<button class="button-xsmall pure-button pure-button-primary btn" type="submit" value="register">register</button>
-							<a class="button-xsmall pure-button btn no_underline"  href="login.php">back</a>
-					</td>
-					</tr>
-				</table>
+			<form id="registerForm" class="register pure-form" method="POST" action="register.php?do" autocomplete="off" >
+				<fieldset class="pure-group">
+						<input name="user" type="text" class="pure-input-1-1" placeholder="user"/>
+						<input name="email" type="text" class="pure-input-1-1" placeholder="email" />
+						<input name="email_confirm" type="text" class="pure-input-1-1" placeholder="repeat email" />
+						<input name="pw" type="password" class="pure-input-1-1" placeholder="pass" />
+						<input name="pw_confirm" type="password" class="pure-input-1-1" placeholder="repeat pass" />				
+					</fieldset>
+					<button class="button-xsmall pure-button pure-button-primary btn" type="submit" value="register">register</button>
+					<a class="button-xsmall pure-button btn no_underline"  href="login.php">back</a>
 			</form>
 		</div>
-
 </body>
 </html>
